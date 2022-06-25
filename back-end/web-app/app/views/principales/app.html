@@ -1,0 +1,13 @@
+<section ng-include="'app/views/principales/header.html'" id="header" class="{{main.settings.navbarHeaderColor}}"></section>
+<div id="controls" ng-switch on="verificarRol()">
+	<div ng-switch-when="ROLE_ADMIN">
+		<aside ng-include="'app/views/principales/nav.html'" id="sidebar" class="{{main.settings.sidebarColor}}" ng-class="{'aside-fixed':main.settings.asideFixed}"></aside>
+	</div>
+	<div ng-switch-default>
+		<aside ng-include="'app/views/principales/nav.html'" id="sidebar" class="{{main.settings.sidebarColor}}" ng-class="{'aside-fixed':main.settings.asideFixed}"></aside>
+	</div>
+</div>
+
+<div class="view-container" ui-view-container>
+	<section ui-view id="content" autoscroll="false"></section>
+</div>

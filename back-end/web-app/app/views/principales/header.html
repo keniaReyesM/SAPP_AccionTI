@@ -1,0 +1,41 @@
+<header class="clearfix">
+	<!-- branding -->
+	<div class="branding  {{main.settings.brandingColor}}">
+		<a class="brand" ui-sref="app.dashboard.inicio">
+			<span>
+				<strong>
+					<i class="fa fa-stethoscope"></i> SAPP</strong>
+			</span>
+		</a>
+		<a href="javascript:;" class="offcanvas-toggle visible-xs-inline" offcanvas-sidebar>
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<!-- Branding end -->
+	<!-- Left-side navigation -->
+	<ul class="nav-left pull-left list-unstyled list-inline">
+		<li class=" divided-right"></li>
+	</ul>
+	<!-- Left-side navigation end -->
+	<ul class="nav-right pull-right list-inline">
+	
+
+
+
+		<li class="dropdown nav-profile text-white" >
+
+			{{ verificarRol().replace("ROLE_", "") }}&nbsp;
+			<img src="images/fotoperfil.png" alt="" class="img-circle size-30x30 mr-6">
+
+			<span class="ml-6">{{infoUsuario.nombreCompleto}}</span>
+
+			<a ng-click="mCtr.logout()" class="manita text-white">
+				<i class="fa fa-sign-out"></i> Salir
+			</a>
+		</li>
+		<li class="dropdown language" uib-dropdown>
+			<a href="#">
+				&nbsp;
+			</a>
+	</ul>
+</header>

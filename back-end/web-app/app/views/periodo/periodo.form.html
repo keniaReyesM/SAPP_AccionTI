@@ -1,0 +1,20 @@
+<div class="form-group has-feedback col-lg-4" ng-class="{'has-error':formulario.nombre.$invalid && formulario.nombre.$dirty || !objetoModel.nombre, 'has-primary':formulario.nombre.$valid && formulario.nombre.$dirty || objetoModel.nombre}">
+	<label class="control-label" style="color:#616f77!important" for="nombre">Descripción</label>
+	<!--Solo agregar atributo name-->
+	<input type="text" ng-maxlength="objetoModel.max" class="form-control" aria-describedby="nombreErrores" id="nombre" name="nombre" required="true" placeholder="Ingrese..." ng-model="objetoModel.nombre" />
+	<span class="fa form-control-feedback" aria-hidden="true" ng-class="{'fa-warning':formulario.nombre.$invalid && formulario.nombre.$dirty || !objetoModel.nombre, 'fa-check':formulario.nombre.$valid && formulario.nombre.$dirty || objetoModel.nombre}"></span>
+	<span id="nombreErrores" ng-show="formulario.nombre.$dirty" class="help-block text-danger" ng-messages="formulario.nombre.$error">
+		<div ng-messages-include="mensajes-error"></div>
+	</span>
+</div>
+<div class="form-group has-feedback col-lg-4" ng-class="{'has-error':formulario.descripcion.$invalid && formulario.descripcion.$dirty || !objetoModel.descripcion, 'has-primary':formulario.descripcion.$valid && formulario.descripcion.$dirty || objetoModel.descripcion}">
+	<label class="control-label" style="color:#616f77!important" for="descripcion">Descripción</label>
+	<!--Solo agregar atributo name-->
+	<input type="text" ng-maxlength="objetoModel.max" class="form-control" aria-describedby="descripcionErrores" id="descripcion" name="descripcion" required="true" placeholder="Ingrese..." ng-model="objetoModel.descripcion" />
+	<span class="fa form-control-feedback" aria-hidden="true" ng-class="{'fa-warning':formulario.descripcion.$invalid && formulario.descripcion.$dirty || !objetoModel.descripcion, 'fa-check':formulario.descripcion.$valid && formulario.descripcion.$dirty || objetoModel.descripcion}"></span>
+	<span id="descripcionErrores" ng-show="formulario.descripcion.$dirty" class="help-block text-danger" ng-messages="formulario.descripcion.$error">
+		<div ng-messages-include="mensajes-error"></div>
+	</span>
+</div>
+<hr class="line-dashed line-full">
+<p class="text-cyan"></p>
