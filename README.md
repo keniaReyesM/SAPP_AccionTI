@@ -122,6 +122,7 @@ runtime 'org.grails.plugins:cors:1.1.8'
 
 ## Roles 
 
+* **`ROLE_SA`** -> Super administrador
 * **`ROLE_ADMIN`** -> Administrador
 * **`ROLE_DOCENTE`** -> Docente
 * **`ROLE_RESPONSABLE`** -> Responsable
