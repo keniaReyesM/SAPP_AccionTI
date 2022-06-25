@@ -140,15 +140,15 @@ class BootStrap {
         }
 
 
-        def periodos = ["Enero - Febrero 2022", "Febrero - Marzo 2022", "Marzo - Abril 2022", "Abril - Mayo 2022",
-        "Mayo - Junio 2022", " Junio - Julio 2022", "Julio - Agosto 2022", "Agosto - Septiembre 2022", "Septiembre - Octubre 2022",
-        "Octubre - Noviembre 2022", "Noviembre - Diciembre 2022"]
+        // def periodos = ["Enero - Febrero 2022", "Febrero - Marzo 2022", "Marzo - Abril 2022", "Abril - Mayo 2022",
+        // "Mayo - Junio 2022", " Junio - Julio 2022", "Julio - Agosto 2022", "Agosto - Septiembre 2022", "Septiembre - Octubre 2022",
+        // "Octubre - Noviembre 2022", "Noviembre - Diciembre 2022"]
 
-        periodos.each {
-            if(Periodo.findByNombre(it)== null){
-                new Periodo(nombre: it, fechaFin: new Date(), fechaInicio: new Date()).save(flush: true, failOnError: true)
-            }
-        }
+        // periodos.each {
+        //     if(Periodo.findByNombre(it)== null){
+        //         new Periodo(nombre: it, fechaFin: new Date(), fechaInicio: new Date()).save(flush: true, failOnError: true)
+        //     }
+        // }
 
 
     }
