@@ -1,5 +1,5 @@
-# UTEZ
-CODEC
+# ACCION TI
+SAPP : Sistema de Administración Preescolar y Primaria.
 
 ## Versiones
 
@@ -82,10 +82,10 @@ code --install-extension EditorConfig.EditorConfig
 
 ### Conexión a BD
 
-* **En necesario crear la BD con nombre `prueba`**
+* **En necesario crear la BD con nombre `sapp`**
 
 ```sql
-CREATE SCHEMA `codec` DEFAULT CHARACTER SET utf8;
+CREATE SCHEMA `sapp` DEFAULT CHARACTER SET utf8;
 ```
 
 :exclamation: **Revisar configuración de `Datasource.groovy` antes de arrancar el proyecto**
@@ -95,7 +95,7 @@ CREATE SCHEMA `codec` DEFAULT CHARACTER SET utf8;
     dialect = 'org.hibernate.dialect.MySQL5InnoDBDialect'
     driverClassName = 'com.mysql.jdbc.Driver'
     dbCreate = 'update'
-    url = 'jdbc:mysql://localhost:3306/codec'
+    url = 'jdbc:mysql://localhost:3306/sapp'
     username = 'root'
     password = 'root'
 }   
