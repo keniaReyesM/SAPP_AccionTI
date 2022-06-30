@@ -1,5 +1,5 @@
 # ACCION TI
-SAPP : Sistema de Administración Preescolar y Primaria.
+SAPP : Sistema de Administración Preescolar y Primaria
 
 ## Versiones
 
